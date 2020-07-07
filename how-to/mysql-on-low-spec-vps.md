@@ -2,12 +2,12 @@
 title: MySQL on low spec VPS
 description: 
 published: true
-date: 2020-07-05T04:59:34.161Z
-tags: 
-editor: undefined
+date: 2020-07-07T09:30:20.855Z
+tags: server, mysql, vps
+editor: markdown
 ---
 
-In the attempt to setup two MySQL database docker containers on the cheapest DigitalOceans's VPS, I have found out that MySQL has used up all of the server's allocated 1GB RAM.
+In the attempt to setup two MySQL database docker containers on the cheapest DigitalOceans's VPS, I have found out that the MySQL container was crashing itself.
 
 After identifying the issue, it is discovered that a single MySQL container uses ~300MB of RAM on idle.
 
