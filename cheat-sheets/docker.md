@@ -2,7 +2,7 @@
 title: Docker / Compose 
 description: 
 published: true
-date: 2020-07-10T08:14:56.097Z
+date: 2020-07-10T09:34:37.506Z
 tags: 
 editor: markdown
 ---
@@ -47,7 +47,7 @@ Inspect the container details.
 docker inspect <containerID> --format='{{range .NetworkSettings.Networks}}{{.Gateway}}{{end}}'
 ```
 
-Use `range` to iterate throught item and `{{end}}` to end the query.
+Use `range` to iterate through array items and `{{end}}` to end the query.
 
 ## Kill Individiual Container
 
