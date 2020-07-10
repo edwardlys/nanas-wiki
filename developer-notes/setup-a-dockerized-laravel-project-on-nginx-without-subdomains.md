@@ -2,9 +2,9 @@
 title: Setup a dockerized Laravel project on Nginx without subdomains
 description: 
 published: true
-date: 2020-07-05T06:32:49.676Z
-tags: 
-editor: undefined
+date: 2020-07-10T07:35:40.512Z
+tags: server, laravel, nginx, php
+editor: markdown
 ---
 
 Note that this is only for when hosting a web application using subdirectory structure like:
@@ -108,3 +108,8 @@ ln -s ../ ./projects/project_name
 ```
 
 And that is how to setup a dockerized Laravel application served by Nginx using subdirectory structure instead of subdomains. 
+
+## References
+- https://serverfault.com/questions/607615/using-trailing-slashes-in-nginx-configuration
+- http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_pass
+- https://laravel.com/docs/7.x/requests#configuring-trusted-proxies
