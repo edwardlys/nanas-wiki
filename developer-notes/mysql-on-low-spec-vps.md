@@ -2,7 +2,7 @@
 title: MySQL on low spec VPS
 description: 
 published: true
-date: 2020-07-07T09:30:20.855Z
+date: 2020-07-10T07:32:26.117Z
 tags: server, mysql, vps
 editor: markdown
 ---
@@ -31,3 +31,8 @@ If the above option is not desirable, here are other options:
 - Use only one DB container instance for all projects
 - Host DB on dedicated DB instance
 - Use other DB such as MongoDB or PostgreSQL (however I have not tried this)
+
+## References
+
+- https://mariadb.com/resources/blog/starting-mysql-on-low-memory-virtual-machines/
+- https://lowendbox.com/blog/reducing-mysql-memory-usage-for-low-end-boxes/
