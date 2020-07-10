@@ -1,10 +1,10 @@
 ---
-title: Hello Friend
+title: Welcome
 description: Nope this is not a tech blog
 published: true
-date: 2020-07-05T03:45:21.671Z
+date: 2020-07-10T07:15:21.346Z
 tags: 
-editor: undefined
+editor: markdown
 ---
 
 Welcome to my humble wiki where I will be documentating things that I have learnt throughout my career as a web developer.
