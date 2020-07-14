@@ -2,7 +2,7 @@
 title: Docker / Compose 
 description: 
 published: true
-date: 2020-07-10T09:34:37.506Z
+date: 2020-07-14T16:23:00.827Z
 tags: 
 editor: markdown
 ---
@@ -63,6 +63,13 @@ docker-compose kill <ServiceName>
 
 ```bash
 docker build
+```
+
+## Start A Container
+
+```bash
+cd <project-folder>
+docker-compose up -d
 ```
 
 Options
