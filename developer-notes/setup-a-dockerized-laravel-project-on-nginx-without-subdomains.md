@@ -2,9 +2,9 @@
 title: Setup a dockerized Laravel project on Nginx without subdomains
 description: 
 published: true
-date: 2020-07-10T07:35:40.512Z
-tags: server, laravel, nginx, php
-editor: markdown
+date: 2020-07-10T07:35:44.554Z
+tags: 
+editor: undefined
 ---
 
 Note that this is only for when hosting a web application using subdirectory structure like:
