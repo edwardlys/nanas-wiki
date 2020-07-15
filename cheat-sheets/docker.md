@@ -2,9 +2,9 @@
 title: Docker / Compose 
 description: 
 published: true
-date: 2020-07-14T16:23:10.729Z
+date: 2020-07-15T01:31:58.970Z
 tags: 
-editor: undefined
+editor: markdown
 ---
 
 ## Check Usage
@@ -65,6 +65,11 @@ docker-compose kill <ServiceName>
 docker build
 ```
 
+Options
+- `--no-cache` Do not use cache
+- `--tag <name>` Tag the image with a name
+- `--file` Target a non standard named dockerfile
+
 ## Start A Container
 
 ```bash
@@ -72,7 +77,9 @@ cd <project-folder>
 docker-compose up -d
 ```
 
-Options
-- `--no-cache` Do not use cache
-- `--tag <name>` Tag the image with a name
-- `--file` Target a non standard named dockerfile
+```bash
+docker run <image-name> --detach
+```
+
+- `--name` Name the container
+- `--publish <host-port>:<container-port>` Publish port
