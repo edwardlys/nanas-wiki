@@ -2,7 +2,7 @@
 title: Laravel Blade Components Quirks and Limitations
 description: 
 published: true
-date: 2020-07-26T09:34:11.809Z
+date: 2020-07-26T09:56:08.433Z
 tags: 
 editor: markdown
 ---
@@ -17,17 +17,31 @@ This enhances the reusability and encapsulation of the component.
 
 However, before jumping into it, do take note of the limitation and quirks of Blade components.
 
-1. Slots HTML are rendered before the component contents are rendered.
-2. Slots are only rendered once for every component.
+## Slots content are rendered before the component contents are rendered
 
+Why this was significant to me? Because coming from VueJS/Vuetify background, I was used to this:
 
-## Using double qoutes inside class attributes will cause the component to fail.
+```javascript
+<template v-slot:item.glutenfree="{ item }">
+		<v-simple-checkbox v-model="item.glutenfree" disabled></v-simple-checkbox>
+</template>
+```
+Note that we can extract `item` in the code above to be used in your slot content. This means data can be passed from the component as the component contents are being rendered. 
 
-Be careful when using helper functions inside class attributes of a component tag. Apparently using double qoutes will cause it to fail.
+Where as blade component slots are unable to perform such task because slot contents are rendered before the components does and thus making the slot contents static. 
+
+This was not in the documentation. Maybe it is something that should be understood by common sense but I learnt it the hard way.
+
+## Blade delimiter does not work as expected inside class attributes
+
+I could not find the reason behind this failure but below are some example. It looks like the Blade delimiter `{{` and `}}` does not work inside the component. Hence causing this issue. 
 
 ```php
 //This is OK
 <x-search action="{{ url('/admin/product') }}" search="{{ $search }}"/>
+
+//This is OK
+<x-search action='{{ url("/admin/product") }}' search="{{ $search }}"/>
 
 //This is not OK
 <x-search action="{{ url("/admin/product") }}" search="{{ $search }}"/>
