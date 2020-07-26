@@ -2,7 +2,7 @@
 title: Laravel Blade Components Quirks and Limitations
 description: 
 published: true
-date: 2020-07-26T09:29:41.355Z
+date: 2020-07-26T09:34:11.809Z
 tags: 
 editor: markdown
 ---
@@ -19,4 +19,17 @@ However, before jumping into it, do take note of the limitation and quirks of Bl
 
 1. Slots HTML are rendered before the component contents are rendered.
 2. Slots are only rendered once for every component.
-3. Using double qoutes inside class attributes will cause "endif"
+
+
+## Using double qoutes inside class attributes will cause the component to fail.
+
+Be careful when using helper functions inside class attributes of a component tag. Apparently using double qoutes will cause it to fail.
+
+```php
+//This is OK
+<x-search action="{{ url('/admin/product') }}" search="{{ $search }}"/>
+
+//This is not OK
+<x-search action="{{ url("/admin/product") }}" search="{{ $search }}"/>
+```
+
