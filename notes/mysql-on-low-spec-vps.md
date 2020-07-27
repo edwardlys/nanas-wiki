@@ -2,7 +2,7 @@
 title: MySQL on low spec VPS
 description: 
 published: true
-date: 2020-07-27T00:20:32.818Z
+date: 2020-07-27T00:21:04.660Z
 tags: server, mysql, vps
 editor: markdown
 ---
