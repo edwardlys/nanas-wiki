@@ -2,7 +2,7 @@
 title: Docker / Compose 
 description: 
 published: true
-date: 2020-07-15T01:36:16.963Z
+date: 2020-09-25T07:44:38.604Z
 tags: 
 editor: markdown
 ---
@@ -83,3 +83,9 @@ docker run <image-name> --detach
 
 - `--name` Name the container
 - `--publish <host-port>:<container-port>` Publish port
+
+## Start all stopped container
+
+```bash
+docker start $(docker ps -aq)
+```
