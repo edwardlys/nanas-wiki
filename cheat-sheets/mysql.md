@@ -2,9 +2,10 @@
 title: MySQL
 description: 
 published: true
-date: 2020-08-10T02:34:19.898Z
+date: 2020-10-29T09:17:27.122Z
 tags: 
 editor: markdown
+dateCreated: 2020-08-10T02:34:19.898Z
 ---
 
 ## Creating a new user
@@ -36,3 +37,12 @@ GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
+## Disable foreign key checks
+
+Other times, it is understandable to need to disable foreign key checks for tables under maintenance. Do this with caution.
+
+```mysql
+SET FOREIGN_KEY_CHECKS=0;
+```
+
+To re-enable, just set the value to 1.
