@@ -2,9 +2,10 @@
 title: MySQL on low spec VPS
 description: 
 published: true
-date: 2020-07-27T00:21:04.660Z
-tags: server, mysql, vps
-editor: markdown
+date: 2020-07-27T00:21:08.151Z
+tags: 
+editor: undefined
+dateCreated: 2020-07-05T04:59:30.297Z
 ---
 
 In the attempt to setup two MySQL database docker containers on the cheapest DigitalOceans's VPS, I have found out that the MySQL container was crashing itself.

@@ -5,6 +5,7 @@ published: true
 date: 2020-07-10T10:31:23.405Z
 tags: 
 editor: undefined
+dateCreated: 2020-07-05T02:24:44.947Z
 ---
 
 Welcome to my humble wiki where I will be documentating things that I have learnt throughout my career as a web developer.

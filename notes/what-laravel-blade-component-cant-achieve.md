@@ -2,9 +2,10 @@
 title: Laravel Blade Components Quirks and Limitations
 description: 
 published: true
-date: 2020-07-27T00:19:45.563Z
+date: 2020-07-27T00:19:49.311Z
 tags: 
-editor: markdown
+editor: undefined
+dateCreated: 2020-07-26T09:15:07.318Z
 ---
 
 Laravel Blade components looks like it is trying to do what VueJS components is doing. You could:
