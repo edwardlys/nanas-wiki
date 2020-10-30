@@ -2,9 +2,9 @@
 title: Laravel Blade Components Quirks and Limitations
 description: 
 published: true
-date: 2020-07-27T00:19:49.311Z
+date: 2020-10-30T05:30:04.176Z
 tags: 
-editor: undefined
+editor: markdown
 dateCreated: 2020-07-26T09:15:07.318Z
 ---
 
@@ -32,6 +32,11 @@ Note that we can extract `item` in the code above to be used in your slot conten
 Where as blade component slots are unable to perform such task because slot contents are rendered before the components does and thus making the slot contents static. 
 
 This was not in the documentation. Maybe it is something that should be understood by common sense but I learnt it the hard way.
+
+-- Update 2020-10-30
+In Laravel 8 there has been a few new features for Blade templating specifically to dynamically render templates in run time. Perhaps this update will mitigate this issue.
+
+Check it out here: https://laravel-news.com/laravel8
 
 ## Blade delimiter does not work as expected inside class attributes
 
