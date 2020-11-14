@@ -2,9 +2,9 @@
 title: Anatomy of a URI
 description: 
 published: true
-date: 2020-08-10T02:21:28.354Z
+date: 2020-11-14T04:28:06.740Z
 tags: 
-editor: undefined
+editor: markdown
 dateCreated: 2020-08-10T02:20:07.809Z
 ---
 
