@@ -2,7 +2,7 @@
 title: Laravel Blade Components Quirks and Limitations
 description: 
 published: true
-date: 2020-10-30T05:30:04.176Z
+date: 2020-11-14T04:26:43.287Z
 tags: 
 editor: markdown
 dateCreated: 2020-07-26T09:15:07.318Z
