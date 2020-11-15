@@ -2,7 +2,7 @@
 title: Limit CPU and memory usage on WSL2 + Docker for Windows
 description: 
 published: true
-date: 2020-11-14T05:30:30.949Z
+date: 2020-11-15T02:22:33.878Z
 tags: cpu, memory, docker, wsl2
 editor: markdown
 dateCreated: 2020-11-14T04:25:55.110Z
@@ -20,7 +20,6 @@ However, you are like me and running a little short on RAM, it can lead to a slu
 Coupling this issue that with 50 tabs of code documentations and YouTube video tutorials in Chrome browser (as all developers do), you can find yourself running out of memory almost too soon.
 
 ## How to limit memory and CPU
-
 One can always limit the CPU and memory usage of this VM.
 
 At the directory `C:\Users\<username>`, edit or create a file named `.wslconfig` with the contents below:
@@ -30,4 +29,11 @@ At the directory `C:\Users\<username>`, edit or create a file named `.wslconfig`
 memory=1GB 		# Limits VM memory in WSL 2 to 1GB
 processors=2 	# Makes the WSL 2 VM use two virtual processors
 ```
+
+Next is to restart the WSL2. To do that, start PowerShell with administrator priviledge and run the command below:
+
+```
+Restart-Service LxssManager
+```
+
 There is more to limitting the memory and processor in `.wslconfig`. More options can be found here: https://docs.microsoft.com/en-us/windows/wsl/wsl-config#wsl-2-settings
