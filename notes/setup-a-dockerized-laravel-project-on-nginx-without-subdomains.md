@@ -10,9 +10,10 @@ dateCreated: 2020-07-05T03:44:42.709Z
 
 Note that this is only for when hosting a web application using subdirectory structure like:
 
+```
 domain.com/projects/your-project-1-name
-
 domain.com/projects/your-project-2-name
+```
 
 This structure is slightly more complicated to setup compared to the subdomain structure. The reason behind it is because:
   
