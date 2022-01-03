@@ -1,5 +1,5 @@
 ---
-title: Setup a dockerized Laravel project on Nginx without subdomains
+title: Setup multiple dockerized Laravel projects on Nginx without subdomains
 description: 
 published: true
 date: 2020-07-27T00:22:08.761Z
@@ -21,7 +21,7 @@ This structure is slightly more complicated to setup compared to the subdomain s
 - Laravel will only accept X-Forwarded headers from trusted proxies.
 - Laravel's issue with signed route as two signatures are generated using completely different methods.
 
-Below are the three required steps to setup the dockerized Laravel project on Nginx without subdomains.
+Below are the three required steps when setting up multiple dockerized Laravel projects on Nginx without subdomains.
 
 ## Proxy Pass
 To setup proxy pass, modify the `/etc/nginx/sites-enabled/default` config file using the following configuration:
